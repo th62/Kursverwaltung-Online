@@ -33,13 +33,13 @@
       <li class="list-group-item">
       <span *ngIf="kursDetail.freiePlaetze && kursDetail.freiePlaetze > 0">Sie interessieren sich für diesen Kurs oder möchten sich anmelden?<br><br>
       <a class="text-decoration-none  text-secondary"
-         href="mailto:info@ok.org?subject={{formatter.urlEncodeString(kursDetail.name!)}}&amp;body={{formatter.urlEncodeString('Hallo liebes oK-Team,' +
+         href="mailto:info@mail.de?subject={{formatter.urlEncodeString(kursDetail.name!)}}&amp;body={{formatter.urlEncodeString('Hallo liebes oK-Team,' +
        '\r\n\r\nich interessiere mich für den im Betreff genannten Kurs.\r\n\Bitte nehmt Kontakt mit mir auf, danke.\r\n\r\nFreundliche Grüße\r\n\r\n'!)}}">
         <i class="fa fa-envelope fa-2x  text-secondary"></i> Email schicken!</a></span>
 
         <span *ngIf="!kursDetail.freiePlaetze || kursDetail.freiePlaetze === 0">Sie interessieren sich für diesen Kurs oder möchten auf die Warteliste?<br><br>
       <a class="text-decoration-none  text-secondary"
-         href="mailto:info@ok.org?subject={{formatter.urlEncodeString(kursDetail.name!)}}&amp;body={{formatter.urlEncodeString('Hallo liebes oK-Team,' +
+         href="mailto:info@mail.de?subject={{formatter.urlEncodeString(kursDetail.name!)}}&amp;body={{formatter.urlEncodeString('Hallo liebes oK-Team,' +
        '\r\n\r\nich interessiere mich für den im Betreff genannten Kurs.\r\n\Bitte nehmt Kontakt mit mir auf, danke.\r\n\r\nFreundliche Grüße\r\n\r\n'!)}}">
         <i class="fa fa-envelope fa-2x  text-secondary"></i> Email schicken!</a></span>
       </li>
