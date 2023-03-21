@@ -160,11 +160,11 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-LOCK TABLES `users` WRITE;
+--- LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (6,'admin@mail.de','$2a$10$bxFtNgKAhYwjtK6.e7F89OnDzADBWE2m6aZnkgUEK.wq.zHNoq1gC','admin');
+--- INSERT INTO `users` VALUES (6,'admin@mail.de','$2a$10$bxFtNgKAhYwjtK6.e7F89OnDzADBWE2m6aZnkgUEK.wq.zHNoq1gC','admin');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
-UNLOCK TABLES;
+--- UNLOCK TABLES;
 
 --
 -- Table structure for table `zuordnung`
