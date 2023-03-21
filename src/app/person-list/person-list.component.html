@@ -1,0 +1,92 @@
+<div id="showOnScreen" class="container">
+<div class="card bg-light mb-3 table-responsive">
+  <div class="card-header"><h4>Liste aller gespeicherten Personen</h4>
+  </div>
+    <div class="card-body d-flex justify-content-between">
+      <div class="search-name col-sm-2">
+        <input class="form-control py-2 border rounded-pill" type="text" name="Suchen" [(ngModel)]="searchText"
+               placeholder="Suchen">
+      </div>
+      <div class="col-sm-2 justify-content-end">
+        <a (click)="openPdfPersonenListe()" target="_blank" title="Zum Download der Liste aller Personen bitte hier klicken!"
+           class="btn btn-secondary cursor-pointer">Personenliste&nbsp;&nbsp;
+          <i class="fa fa-file-pdf-o fa-2x"></i></a>
+      </div>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+      <th>Id</th>
+      <th>Anrede</th>
+      <th>Titel</th>
+      <th>Vorname</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Telefon</th>
+      <th>Aktion</th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let person of personList | filter: searchText">
+        <td>{{person.id}}</td>
+        <td>{{person.anrede}}</td>
+        <td>{{person.titel}}</td>
+        <td>{{person.vorname}}</td>
+        <td>{{person.name}}</td>
+        <td>{{person.email}}</td>
+        <td>{{person.telefon}}</td>
+        <td>
+          <button class="btn btn-sm btn-info" (click)="details(person)">
+            <i class="fa fa-search"></i> Details
+          </button>
+          <button class="btn btn-sm btn-warning" (click)="updatePerson(person)">
+            <i class="fa fa-edit"></i> Edit
+          </button>
+          <button class="btn btn-sm btn-danger" (click)="delete(person)">
+            <i class="fa fa-remove"></i> Delete
+          </button>
+          <button class="btn btn-sm btn-dark " (click)="manageFromPerson(person)">
+            <i class="fa fa-hand-paper-o"></i> Manage
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+<div id="printToPdf" #printToPdf>
+  <table class="table table-striped">
+    <thead>
+    <th>Id</th>
+    <th>Anrede</th>
+    <th>Titel</th>
+    <th>Vorname</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Telefon</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let person of personList">
+      <td>{{person.id}}</td>
+      <td>{{person.anrede}}</td>
+      <td>{{person.titel}}</td>
+      <td>{{person.vorname}}</td>
+      <td>{{person.name}}</td>
+      <td>{{person.email}}</td>
+      <td>{{person.telefon}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+<!--
+person.getAnrede() + " " +
+                person.getTitel() + " " +
+                person.getVorname() + " " +
+                person.getName() + neueZeile +
+                person.getPlz() + " " +
+                person.getOrt() + " " +
+                person.getStrasse() + neueZeile +
+                person.getEmail() + tabulator +
+                person.getTelefon();
+-->

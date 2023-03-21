@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="card" style="width: 35rem;">
+    <img *ngIf="personDetail.anrede=='Divers'" class="card-img-top"
+         src="../../assets/images/divers.png" height="250"
+         width="250" alt="Divers">
+    <img *ngIf="personDetail.anrede=='Herr'" class="card-img-top"
+         src="../../assets/images/herr.png" height="250"
+         width="250" alt="Herr">
+    <img *ngIf="personDetail.anrede=='Frau'" class="card-img-top"
+         src="../../assets/images/frau.png" height="250"
+         width="250" alt="Frau">
+    <img *ngIf="personDetail.anrede==undefined" class="card-img-top"
+         src="../../assets/images/unbekannt.png" height="250"
+         width="250" alt="Unbekannt">
+    <div class="card-body">
+      <h3 class="card-title">Person Id:{{personDetail.id}}</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h5>Name:</h5> &nbsp;{{personDetail.anrede}}&nbsp;&nbsp;{{personDetail.titel}}&nbsp;&nbsp;{{personDetail.vorname}}&nbsp;&nbsp;{{personDetail.name}}
+        </li>
+        <li class="list-group-item"><h5>Email:</h5>{{personDetail.email}}</li>
+        <li *ngIf="personDetail.telefon!=undefined" class="list-group-item"><h5>Telefon:</h5>{{personDetail.telefon}}
+        </li>
+      </ul>
+      <h4 class="card-title">Adresse</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h5>Strasse:</h5> &nbsp;{{personDetail.strasse}}</li>
+        <li class="list-group-item"><h5>PLZ:</h5>{{personDetail.plz}}</li>
+        <li class="list-group-item"><h5>Ort:</h5>{{personDetail.ort}}</li>
+      </ul>
+      <button class="btn btn-sm btn-info" (click)="formatter.back()">
+        <i class="fa fa-arrow-left"></i> Back
+      </button>&nbsp;
+      <button class="btn btn-sm btn-warning" *ngIf="personDetail.id!=undefined" (click)="fromperson(personDetail.id)">
+        <i class="fa fa-cart-plus"></i> Kurse zuordnen
+      </button>
+    </div>
+  </div>
+</div>

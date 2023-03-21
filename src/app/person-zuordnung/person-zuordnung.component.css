@@ -1,0 +1,25 @@
+#table4 {
+  display:block;
+  height : 200px;
+  overflow-y : scroll;
+}
+#table5 {
+  display:block;
+  height : 200px;
+  overflow-y : scroll;
+}
+#table6 {
+  display:block;
+  height : 600px;
+  overflow-y : scroll;
+}
+#background{
+  background-image: url("../../assets/images/bg_zuordnung.jpg");
+  background-color: #cccccc;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-blend-mode: screen;
+}
