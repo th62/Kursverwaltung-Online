@@ -6,10 +6,13 @@
 
 
 Mein Part:
+- Einrichtung GitHub mit je 1 Java und 1 Angular Branch
+- Einrichtung Datenbank und Dump für das Team
+- Koordination in Trello
 - User-Login mit Vorbereitung für Multiuser mit Roles
 - Vereinheitlichung des Layouts
 - Erstellung und Speicherung einer Anwesenheitsliste als PDF-Datei (+Kursliste, +Personenliste)
-- Bugfixing und kleine Korrekturen, Updates im Projekt
-- Koordination in Trello
-- Einrichtung GitHub mit je 1 Java und 1 Angular Branch
+- Erstellung der öffentlichen Views für nicht eingeloggte Besucher
 - Systemtests
+- Bugfixing und kleine Korrekturen, Updates im Projekt
+- Grafikerstellung und Anpassung, Favicons etc.
