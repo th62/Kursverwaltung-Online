@@ -10,3 +10,6 @@ Mein Part:
 - Vereinheitlichung des Layouts
 - Erstellung und Speicherung einer Anwesenheitsliste als PDF-Datei (+Kursliste, +Personenliste)
 - Bugfixing und kleine Korrekturen, Updates im Projekt
+- Koordination in Trello
+- Einrichtung GitHub mit je 1 Java und 1 Angular Branch
+- Systemtests
