@@ -1,4 +1,4 @@
-# SWE-M07
+# SWE-M08
 ## Kursverwaltung online application
 ### Prüfungsprojekt SWE 2022/23
 [5 Teammitglieder]
@@ -18,3 +18,4 @@ Mein Part:
 - Bugfixing und kleine Korrekturen, Updates im Projekt
 - Grafikerstellung und Anpassung, Favicons etc.
 - Erfolgloses deployment auf Uni-Server, deployment auf AWS folgt!
+- Im src/stuff-Ordner liegt der MySQL-Dump
