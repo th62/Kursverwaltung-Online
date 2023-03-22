@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Person} from "../_shared/Person";
 import {PersonStorageService} from "../_services/person-storage.service";
 import {Router} from "@angular/router";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-person-form',
@@ -20,12 +21,17 @@ export class PersonFormComponent {
   }
   ngOnInit(){
   }
+  public personForm: FormGroup = new FormGroup({
+    vorname: new FormControl('', [Validators.required, Validators.minLength(2)]),
+    name: new FormControl('', [Validators.required, Validators.minLength(2)]),
+    email: new FormControl('', [Validators.required, Validators.email])
+  });
   personNeuUpdate(){
     if(this.service.getPersonEntity().id==undefined){
     let response=this.service.addPerson(this.person);
     response.subscribe((data)=>{
       this.return=data
-      alert('Neu Person mit der Id '+this.return.id+' erfolgreichwurde erfolgreich erzeugt.')
+      alert('Neu Person mit der Id '+this.return.id+' wurde erfolgreich erfolgreich erzeugt.')
     })
       this.service.setter(this.emptyPerson);
   }else{

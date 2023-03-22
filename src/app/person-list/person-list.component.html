@@ -16,13 +16,13 @@
 
     <table class="table table-striped">
       <thead>
-      <th>Id</th>
+      <th>&nbsp;#</th>
       <th>Anrede</th>
       <th>Titel</th>
       <th>Vorname</th>
       <th>Name</th>
-      <th>Email</th>
-      <th>Telefon</th>
+      <th>Email / Telefon</th>
+      <th>Adresse</th>
       <th>Aktion</th>
       </thead>
       <tbody>
@@ -32,8 +32,8 @@
         <td>{{person.titel}}</td>
         <td>{{person.vorname}}</td>
         <td>{{person.name}}</td>
-        <td>{{person.email}}</td>
-        <td>{{person.telefon}}</td>
+        <td>{{person.email}}<br>{{person.telefon}}</td>
+        <td>{{person.plz}}&nbsp;{{person.ort}}<br>{{person.strasse}}</td>
         <td>
           <button class="btn btn-sm btn-info" (click)="details(person)">
             <i class="fa fa-search"></i> Details

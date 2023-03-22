@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {ReactiveFormsModule} from "@angular/forms";
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 
 import {AppRoutingModule} from "./app-routing.module.";
@@ -52,6 +53,7 @@ import {KursZuordnungComponent} from './kurs-zuordnung/kurs-zuordnung.component'
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     Ng2SearchPipeModule
   ],
   providers: [authInterceptorProviders],
