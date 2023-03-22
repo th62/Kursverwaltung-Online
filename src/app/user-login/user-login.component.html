@@ -18,7 +18,7 @@
                 Der Benutzername ist ein Pflichtfeld!
               </div>
               <div class="alert alert-danger" *ngIf="errors['minlength']">
-                Mindestens {{errors['minlength'].requiredLength}} Zeichen eingeben!
+                Mindestens {{ errors['minlength'].requiredLength }} Zeichen eingeben!
               </div>
             </ng-container>
           </ng-container>
@@ -33,7 +33,7 @@
                 Das Passwort ist ein Pflichtfeld!
               </div>
               <div class="alert alert-danger" *ngIf="errors['minlength']">
-                Mindestens {{errors['minlength'].requiredLength}} Zeichen eingeben!
+                Mindestens {{ errors['minlength'].requiredLength }} Zeichen eingeben!
               </div>
             </ng-container>
           </ng-container>
@@ -65,7 +65,6 @@
     <div class="card-footer text-center" *ngIf="isLoggedIn">
       Enjoy!
     </div>
-
 
   </div>
 </div>

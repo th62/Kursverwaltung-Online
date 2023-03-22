@@ -36,7 +36,7 @@ export class UserLoginComponent implements OnInit {
     }
   }
 
-  onSubmit(): void {
+  public onSubmit(): void {
     const username = this.loginForm.controls['username'].value;
     const password = this.loginForm.controls['password'].value;
 
@@ -56,7 +56,7 @@ export class UserLoginComponent implements OnInit {
     });
   }
 
-  reloadPage(): void {
+  private reloadPage(): void {
     window.location.reload();
   }
 }
