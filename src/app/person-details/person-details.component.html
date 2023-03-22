@@ -1,16 +1,16 @@
 <div class="container">
-  <div class="card" style="width: 35rem;">
+  <div class="card" style="width: 50rem;">
     <img *ngIf="personDetail.anrede=='Divers'" class="card-img-top"
-         src="../../assets/images/divers.png" height="250"
-         width="250" alt="Divers">
+         src="../../assets/images/divers.png" height="500"
+         width="500" alt="Divers">
     <img *ngIf="personDetail.anrede=='Herr'" class="card-img-top"
-         src="../../assets/images/herr.png" height="250"
+         src="../../assets/images/herr.png" height="500"
          width="250" alt="Herr">
     <img *ngIf="personDetail.anrede=='Frau'" class="card-img-top"
-         src="../../assets/images/frau.png" height="250"
+         src="../../assets/images/frau.png" height="500"
          width="250" alt="Frau">
     <img *ngIf="personDetail.anrede==undefined" class="card-img-top"
-         src="../../assets/images/unbekannt.png" height="250"
+         src="../../assets/images/unbekannt.png" height="500"
          width="250" alt="Unbekannt">
     <div class="card-body">
       <h3 class="card-title">Person Id:{{personDetail.id}}</h3>
