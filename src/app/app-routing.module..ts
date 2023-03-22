@@ -11,6 +11,9 @@ import {HomeComponent} from "./home/home.component";
 import {HomeKurslistComponent} from "./home-kurslist/home-kurslist.component";
 import {HomeKursdetailsComponent} from "./home-kursdetails/home-kursdetails.component";
 
+import {ImpressumComponent} from "./impressum/impressum.component";
+import {DatenschutzComponent} from "./datenschutz/datenschutz.component";
+
 import {PersonFormComponent} from "./person-form/person-form.component";
 import {PersonListComponent} from "./person-list/person-list.component";
 import {PersonDetailsComponent} from "./person-details/person-details.component";
@@ -26,6 +29,9 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'homekurslist', component: HomeKurslistComponent},
   {path: 'homekursdetails/:kursId', component: HomeKursdetailsComponent},
+
+  {path: 'impressum', component: ImpressumComponent},
+  {path: 'datenschutz', component: DatenschutzComponent},
 
   {path: 'login', component: UserLoginComponent},
   {path: 'register', component: UserRegisterComponent},

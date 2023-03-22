@@ -16,6 +16,9 @@ import {HomeComponent} from './home/home.component';
 import {HomeKurslistComponent} from './home-kurslist/home-kurslist.component';
 import {HomeKursdetailsComponent} from './home-kursdetails/home-kursdetails.component';
 
+import { ImpressumComponent } from './impressum/impressum.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+
 import {PageNotFoundComponentComponent} from './page-not-found-component/page-not-found-component.component';
 
 import {PersonListComponent} from './person-list/person-list.component';
@@ -36,6 +39,8 @@ import {KursZuordnungComponent} from './kurs-zuordnung/kurs-zuordnung.component'
     HomeComponent,
     HomeKurslistComponent,
     HomeKursdetailsComponent,
+    ImpressumComponent,
+    DatenschutzComponent,
     PageNotFoundComponentComponent,
 
     PersonListComponent,
@@ -46,7 +51,9 @@ import {KursZuordnungComponent} from './kurs-zuordnung/kurs-zuordnung.component'
     KursListComponent,
     KursFormComponent,
     KursDetailsComponent,
-    KursZuordnungComponent
+    KursZuordnungComponent,
+    ImpressumComponent,
+    DatenschutzComponent
   ],
   imports: [
     BrowserModule,
