@@ -13,6 +13,7 @@ Mein Part:
 - User-Registrierung nur für einen User möglich, danach nur Login, keine Registrierung (Intialisierung für den Kunden quasi)
 - Vereinheitlichung des Layouts
 - Erstellung und Speicherung einer Anwesenheitsliste als PDF-Datei (+Kursliste, +Personenliste)
+- Angular Service für die Datums- und Währungskonvertierung. + zentraler History.back() Aufruf.
 - Erstellung der öffentlichen Views für nicht eingeloggte Besucher
 - Systemtests
 - Bugfixing und kleine Korrekturen, Updates im Projekt
