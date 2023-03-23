@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {FormatterService} from "../_services/formatter.service";
-import {UserService} from "../_services/user.service";
 
 @Component({
   selector: 'app-datenschutz',
@@ -9,7 +8,7 @@ import {UserService} from "../_services/user.service";
 })
 export class DatenschutzComponent implements OnInit {
 
-  constructor(private userService: UserService, public formatter: FormatterService) { }
+  constructor(public formatter: FormatterService) { }
 
   ngOnInit(): void { }
 }

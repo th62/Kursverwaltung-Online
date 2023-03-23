@@ -10,7 +10,6 @@ export class ImpressumComponent  implements OnInit {
   constructor(public formatter: FormatterService) {
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
 }
